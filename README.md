@@ -15,4 +15,4 @@ mess around with and the satisfaction of producing your own utility is great.
 
 ## Password Complexity
 If we assume a default password length of 24 characters and a randomized mixture of uppercase letters (26), lowercase letters (26), numbers (10),
-and special characters (13), I could argue that there are $75^24$ possible password combinations given the current algorithm.
+and special characters (13), I could argue that there are $75^(24)$ possible password combinations given the current algorithm.
