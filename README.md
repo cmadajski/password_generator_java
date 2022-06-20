@@ -12,3 +12,7 @@ Once the alias is set up, you can either generate a password of default length (
 
 I know LastPass, Google, and other services have functions to do pseudo-random password generation as well, but this was a fun little project to
 mess around with and the satisfaction of producing your own utility is great.
+
+## Password Complexity
+If we assume a default password length of 24 characters and a randomized mixture of uppercase letters (26), lowercase letters (26), numbers (10),
+and special characters (13), I could argue that there are 75^24 possible password combinations given the current algorithm.
