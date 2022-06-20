@@ -22,7 +22,7 @@ public class PassGen {
 		byte asciiNum = 0;
 		for (int i = 0; i < numChars; i++) {
 			if (i == specialIndex) {
-				int specialCharCode = (int) Math.floor(Math.random() * 9);
+				int specialCharCode = (int) Math.floor(Math.random() * 13);
 				asciiNum = (byte) getSpecialCharacter(specialCharCode);
 			} else {
 				byte nextChar = (byte) Math.floor(Math.random() * 3);
@@ -59,15 +59,23 @@ public class PassGen {
 			case 4:
 				return 38;
 			case 5:
-				return 42;
+				return 40;
 			case 6:
-				return 43;
+				return 41;
 			case 7:
-				return 63;
+				return 42;
 			case 8:
+				return 43;
+			case 9:
+				return 58;
+			case 10:
+				return 59;
+			case 11:
+				return 63;
+			case 12:
 				return 64;
 			default:
-				return 0;
+				return -1;
 		}
 	}
 }
