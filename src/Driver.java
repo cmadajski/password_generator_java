@@ -7,7 +7,15 @@ public class Driver {
 		if (args.length == 0) {
 			newPassword = new PassGen(24);
 		} else {
-			newPassword = new PassGen(Integer.parseInt(args[0]));
+			int parsedInt = 0;
+			try {
+				parsedInt = Integer.parseInt(args[0]);
+			}
+			catch (NumberFormatException nfe) {
+				System.out.println("Arg[0] must be a pure integer value!");
+				System.exit(0);
+			}
+			newPassword = new PassGen(parsedInt);
 		}
 		System.out.printf("New %d character password created: %s", newPassword.getLength(), newPassword.getPassword());
 	}
